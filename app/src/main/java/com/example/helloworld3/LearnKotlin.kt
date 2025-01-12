@@ -1,8 +1,5 @@
 package com.example.helloworld3
 
-import kotlin.math.max
-
-
 fun main() {
     var a: Int = 10
     a *= 10
@@ -15,4 +12,12 @@ fun methodName(param1: Int, param2: Int): Int {
     return 0
 }
 
-fun largerNumber(param1: Int, param2: Int) = max(param1, param2)
+fun largerNumber(param1: Int, param2: Int): Int {
+    var value = 0
+    if (param1 > param2) {
+        value = param1
+    } else {
+        value = param2
+    }
+    return value
+}
