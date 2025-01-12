@@ -12,8 +12,5 @@ fun methodName(param1: Int, param2: Int): Int {
     return 0
 }
 
-fun largerNumber(param1: Int, param2: Int) = if (param1 > param2) {
-    param1
-} else {
-    param2
-}
+fun largerNumber(param1: Int, param2: Int) = if (param1 > param2) param1 else param2
+
