@@ -13,11 +13,9 @@ fun methodName(param1: Int, param2: Int): Int {
 }
 
 fun largerNumber(param1: Int, param2: Int): Int {
-    var value = 0
-    value = if (param1 > param2) {
+    return if (param1 > param2) {
         param1
     } else {
         param2
     }
-    return value
 }
