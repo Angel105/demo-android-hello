@@ -1,5 +1,6 @@
 package com.example.helloworld3
 
 fun main() {
-    println("Hello Kotlin!")
+    val a = 10
+    println("a = $a")
 }
