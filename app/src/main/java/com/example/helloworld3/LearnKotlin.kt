@@ -35,7 +35,7 @@ fun checkNumber(num: Number) {
 }
 
 fun performLoop() {
-    for (i in 0 until 10) {
+    for (i in 0 until 10 step 2) {
         print("i = $i; ")
     }
     println()
