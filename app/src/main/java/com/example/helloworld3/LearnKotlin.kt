@@ -9,6 +9,7 @@ fun main() {
     println("getScore fun returns: " + getScore("Tommy"))
     val num = 10L
     checkNumber(num)
+    performLoop()
 }
 
 fun methodName(param1: Int, param2: Int): Int {
@@ -31,4 +32,11 @@ fun checkNumber(num: Number) {
         is Double -> println("number is Double")
         else -> println("number not supported")
     }
+}
+
+fun performLoop() {
+    for (i in 0..10) {
+        print("i = $i; ")
+    }
+    println()
 }
