@@ -7,6 +7,8 @@ fun main() {
     println("methodName fun returns: " + methodName(1, 2))
     println("largerNumber fun returns: " + largerNumber(13, 5))
     println("getScore fun returns: " + getScore("Jim"))
+    val num = 10L
+    checkNumber(num)
 }
 
 fun methodName(param1: Int, param2: Int): Int {
@@ -23,3 +25,10 @@ fun getScore(name: String) = when (name) {
     else -> 0
 }
 
+fun checkNumber(num: Number) {
+    when (num) {
+        is Int -> println("number is Int")
+        is Double -> println("number is Double")
+        else -> println("number not supported")
+    }
+}
