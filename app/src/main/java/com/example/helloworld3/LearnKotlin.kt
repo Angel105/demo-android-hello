@@ -10,11 +10,10 @@ fun main() {
     val num = 10L
     checkNumber(num)
     performLoop()
-    val p = Person()
-    p.name = "Jack"
-    p.age = 19
+    val p = Person("Jack", 19)
     p.run()
-    val student = Student("a123", 5)
+    val student = Student("a123", 5, "Jim", 13)
+    student.run()
 }
 
 fun methodName(param1: Int, param2: Int): Int {
