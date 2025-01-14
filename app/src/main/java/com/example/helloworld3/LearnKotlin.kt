@@ -14,6 +14,7 @@ fun main() {
     p.name = "Jack"
     p.age = 19
     p.run()
+    val student = Student("a123", 5)
 }
 
 fun methodName(param1: Int, param2: Int): Int {
