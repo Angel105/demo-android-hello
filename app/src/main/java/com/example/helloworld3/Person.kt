@@ -1,6 +1,6 @@
 package com.example.helloworld3
 
-class Person {
+open class Person {
     var name = ""
     var age = 0
 
