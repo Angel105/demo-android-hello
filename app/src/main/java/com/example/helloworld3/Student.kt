@@ -1,6 +1,4 @@
 package com.example.helloworld3
 
-class Student: Person() {
-    var sno = ""
-    var grade = 0
+class Student(val sno: String, val grade: Int): Person() {
 }
