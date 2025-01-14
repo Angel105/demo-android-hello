@@ -12,11 +12,9 @@ fun main() {
     performLoop()
     val p = Person("Jack", 19)
     p.run()
-    val student = Student("a123", 5, "Jim", 13)
+    val student = Student("a123", 5)
     student.run()
-    val student1 = Student()
     val student2 = Student("Jack", 19)
-    val student3 = Student("a123", 5, "Jack", 19)
 }
 
 fun methodName(param1: Int, param2: Int): Int {
