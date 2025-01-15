@@ -15,6 +15,12 @@ fun main() {
     val student = Student("a123", 5)
     student.run()
     val student2 = Student("Jack", 19)
+    doStudy(student2)
+}
+
+fun doStudy(study: Study) {
+    study.read()
+    study.doHomework()
 }
 
 fun methodName(param1: Int, param2: Int): Int {
