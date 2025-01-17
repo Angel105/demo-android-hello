@@ -16,6 +16,10 @@ fun main() {
     student.run()
     val student2 = Student("Jack", 19)
     doStudy(student2)
+    val cellphone1 = CellPhone("Samsung", 1299.99)
+    val cellphone2 = CellPhone("Samsung", 1299.99)
+    println(cellphone1)
+    println("cellphone1 equals cellphone2: "+ (cellphone1 == cellphone2))
 }
 
 fun doStudy(study: Study) {
