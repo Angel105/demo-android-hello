@@ -20,6 +20,7 @@ fun main() {
     val cellphone2 = CellPhone("Samsung", 1299.99)
     println(cellphone1)
     println("cellphone1 equals cellphone2: "+ (cellphone1 == cellphone2))
+    Singleton.singletonTest()
 }
 
 fun doStudy(study: Study) {
