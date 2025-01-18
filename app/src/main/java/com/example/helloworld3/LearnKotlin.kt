@@ -27,8 +27,10 @@ fun main() {
     }
 }
 
-fun createCollection(): ArrayList<String> {
-    return arrayListOf("Apple", "Banana", "Orange", "Pear", "Grape")
+fun createCollection(): MutableList<String> {
+    val list = mutableListOf("Apple", "Banana", "Orange", "Pear", "Grape")
+    list.add("Watermelon")
+    return list
 }
 
 fun doStudy(study: Study) {
