@@ -21,6 +21,20 @@ fun main() {
     println(cellphone1)
     println("cellphone1 equals cellphone2: "+ (cellphone1 == cellphone2))
     Singleton.singletonTest()
+    val list = createCollection()
+    for (fruit in list) {
+        println(fruit)
+    }
+}
+
+fun createCollection(): ArrayList<String> {
+    val list = ArrayList<String>()
+    list.add("Apple")
+    list.add("Banana")
+    list.add("Orange")
+    list.add("Pear")
+    list.add("Grape")
+    return list
 }
 
 fun doStudy(study: Study) {
