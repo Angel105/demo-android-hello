@@ -28,13 +28,7 @@ fun main() {
 }
 
 fun createCollection(): ArrayList<String> {
-    val list = ArrayList<String>()
-    list.add("Apple")
-    list.add("Banana")
-    list.add("Orange")
-    list.add("Pear")
-    list.add("Grape")
-    return list
+    return arrayListOf("Apple", "Banana", "Orange", "Pear", "Grape")
 }
 
 fun doStudy(study: Study) {
