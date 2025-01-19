@@ -21,16 +21,15 @@ fun main() {
     println(cellphone1)
     println("cellphone1 equals cellphone2: "+ (cellphone1 == cellphone2))
     Singleton.singletonTest()
-    val list = createCollection()
-    for (fruit in list) {
+    val set = createCollection()
+    for (fruit in set) {
         println(fruit)
     }
 }
 
-fun createCollection(): MutableList<String> {
-    val list = mutableListOf("Apple", "Banana", "Orange", "Pear", "Grape")
-    list.add("Watermelon")
-    return list
+fun createCollection(): Set<String> {
+    val set = setOf("Apple", "Banana", "Orange", "Pear", "Grape")
+    return set
 }
 
 fun doStudy(study: Study) {
