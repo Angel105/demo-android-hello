@@ -25,6 +25,21 @@ fun main() {
     for (fruit in set) {
         println(fruit)
     }
+    val map = createHashMap()
+    for ((fruit, number) in map) {
+        println("fruit is $fruit,\tnumber is $number")
+    }
+}
+
+fun createHashMap(): HashMap<String, Int> {
+    val map = HashMap<String, Int>()
+    map.put("Apple", 1)
+    map.put("Banana", 2)
+    map.put("Orange", 3)
+    map.put("Pear", 4)
+    map.put("Grape", 5)
+    return map
+
 }
 
 fun createCollection(): Set<String> {
