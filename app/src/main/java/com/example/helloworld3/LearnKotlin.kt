@@ -29,12 +29,28 @@ fun main() {
     for ((fruit, number) in map) {
         println("fruit is $fruit,\tnumber is $number")
     }
+    val list = createListOfFruits()
+    println("max length fruit is ${getMaxLengthFruit(list)}")
+}
+
+fun getMaxLengthFruit(list: List<String>): String {
+    var maxLengthFruit = ""
+    for (fruit in list) {
+        if (fruit.length>maxLengthFruit.length) {
+            maxLengthFruit = fruit
+        }
+    }
+    return maxLengthFruit
+}
+
+fun createListOfFruits(): List<String> {
+    return listOf("Apple", "Banana", "Orange", "Pear", "Grape",
+        "Watermelon")
 }
 
 fun createHashMap(): Map<String, Int> {
     val map = mapOf("Apple" to 1, "Banana" to 2, "Orange" to 3, "Pear" to 4, "Grape" to 5)
     return map
-
 }
 
 fun createCollection(): Set<String> {
