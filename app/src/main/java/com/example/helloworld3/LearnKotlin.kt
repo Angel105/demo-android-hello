@@ -34,12 +34,7 @@ fun main() {
 }
 
 fun getMaxLengthFruit(list: List<String>): String {
-    var maxLengthFruit = ""
-    for (fruit in list) {
-        if (fruit.length>maxLengthFruit.length) {
-            maxLengthFruit = fruit
-        }
-    }
+    val maxLengthFruit = list.maxBy { it.length }
     return maxLengthFruit
 }
 
