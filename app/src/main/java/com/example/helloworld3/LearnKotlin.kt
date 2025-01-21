@@ -31,13 +31,8 @@ fun main() {
     }
 }
 
-fun createHashMap(): HashMap<String, Int> {
-    val map = HashMap<String, Int>()
-    map["Apple"] = 1
-    map["Banana"] = 2
-    map["Orange"] = 3
-    map["Pear"] = 4
-    map["Grape"] =5
+fun createHashMap(): Map<String, Int> {
+    val map = mapOf("Apple" to 1, "Banana" to 2, "Orange" to 3, "Pear" to 4, "Grape" to 5)
     return map
 
 }
