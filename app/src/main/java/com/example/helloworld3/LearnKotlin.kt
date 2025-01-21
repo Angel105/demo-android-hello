@@ -33,11 +33,11 @@ fun main() {
 
 fun createHashMap(): HashMap<String, Int> {
     val map = HashMap<String, Int>()
-    map.put("Apple", 1)
-    map.put("Banana", 2)
-    map.put("Orange", 3)
-    map.put("Pear", 4)
-    map.put("Grape", 5)
+    map["Apple"] = 1
+    map["Banana"] = 2
+    map["Orange"] = 3
+    map["Pear"] = 4
+    map["Grape"] =5
     return map
 
 }
