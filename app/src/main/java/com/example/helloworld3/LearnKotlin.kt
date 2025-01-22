@@ -33,12 +33,23 @@ fun main() {
 
     list = mapToUppercase(list)
     printElementsOfCollection(list)
+
+    list = createListOfFruits()
+    val filteredFruits = filterFruits(list)
+    printElementsOfCollection(filteredFruits)
+}
+
+fun filterFruits(collection: Collection<String>): Collection<String> {
+    val newCollection = collection.filter { it.length <= 5 }
+        .map { it.uppercase() }
+    return newCollection
 }
 
 fun printElementsOfCollection(collection: Collection<String>) {
     for (element in collection) {
         println(element)
     }
+    println("---")
 }
 
 fun mapToUppercase(list: List<String>): List<String> {
