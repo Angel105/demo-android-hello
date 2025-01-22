@@ -22,15 +22,28 @@ fun main() {
     println("cellphone1 equals cellphone2: "+ (cellphone1 == cellphone2))
     Singleton.singletonTest()
     val set = createCollection()
-    for (fruit in set) {
-        println(fruit)
-    }
+    printElementsOfCollection(set)
+
     val map = createHashMap()
     for ((fruit, number) in map) {
         println("fruit is $fruit,\tnumber is $number")
     }
-    val list = createListOfFruits()
+    var list = createListOfFruits()
     println("max length fruit is ${getMaxLengthFruit(list)}")
+
+    list = mapToUppercase(list)
+    printElementsOfCollection(list)
+}
+
+fun printElementsOfCollection(collection: Collection<String>) {
+    for (element in collection) {
+        println(element)
+    }
+}
+
+fun mapToUppercase(list: List<String>): List<String> {
+    val newList = list.map { it.uppercase()}
+    return newList
 }
 
 fun getMaxLengthFruit(list: List<String>): String {
