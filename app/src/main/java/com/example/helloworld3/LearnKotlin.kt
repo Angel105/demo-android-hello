@@ -54,10 +54,10 @@ fun main() {
         printUpperCase(content)
     }
 
-    printParams(123)
+    printParams()
 }
 
-fun printParams(num: Int, str:String = "hello") {
+fun printParams(num: Int = 100, str:String = "hello") {
     println("num is $num, str is $str")
 }
 
