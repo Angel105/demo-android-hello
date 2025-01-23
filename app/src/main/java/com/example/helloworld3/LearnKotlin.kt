@@ -54,7 +54,7 @@ fun main() {
         printUpperCase(content)
     }
 
-    printParams(str = "Kotlin", num = 123)
+    printParams(str = "Kotlin")
 }
 
 fun printParams(num: Int = 100, str:String = "hello") {
