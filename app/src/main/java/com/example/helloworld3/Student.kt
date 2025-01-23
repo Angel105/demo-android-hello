@@ -1,9 +1,7 @@
 package com.example.helloworld3
 
-class Student(val sno: String, val grade: Int, name: String, age:Int): Person(name, age) {
-    constructor(name:String, age:Int) : this("", 0, name, age) {
-    }
-
-    constructor(): this("", 0) {
+class Student(val sno: String = "a123", val grade: Int = 0, name: String = "", age:Int = 0): Person(name, age) {
+    override fun run() {
+        println("Student $name, having serial number $sno,  is running grade $grade. He is $age years old.")
     }
 }

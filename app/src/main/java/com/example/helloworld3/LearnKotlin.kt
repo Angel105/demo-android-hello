@@ -12,7 +12,7 @@ fun main() {
     performLoop()
     val p = Person("Jack", 19)
     p.run()
-    val student = Student("a123", 5, "Jim", 13)
+    val student = Student(grade = 5, age = 13, name = "Jim")
     student.run()
 }
 
