@@ -42,6 +42,12 @@ fun main() {
     val anyResult = anyFruit(list)
     val allResult = allFruits(list)
     println("anyResult is $anyResult, allResult is $allResult")
+
+    Thread(object : Runnable {
+        override fun run() {
+            println("Thread is running")
+        }
+    }).start()
 }
 
 fun allFruits(collection: Collection<String>): Boolean {
