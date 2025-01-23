@@ -43,10 +43,8 @@ fun main() {
     val allResult = allFruits(list)
     println("anyResult is $anyResult, allResult is $allResult")
 
-    Thread(object : Runnable {
-        override fun run() {
-            println("Thread is running")
-        }
+    Thread(Runnable {
+        println("Thread is running")
     }).start()
 }
 
