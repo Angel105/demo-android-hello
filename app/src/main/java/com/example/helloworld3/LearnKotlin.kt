@@ -111,8 +111,10 @@ fun createCollection(): Set<String> {
 }
 
 fun doStudy(study: Study?) {
-    study?.read()
-    study?.doHomework()
+    study?.let { stu ->
+        stu.read()
+        stu.doHomework()
+    }
 }
 
 fun methodName(param1: Int, param2: Int): Int {
