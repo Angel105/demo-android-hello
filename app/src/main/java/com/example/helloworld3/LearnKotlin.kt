@@ -35,11 +35,26 @@ fun main() {
     printElementsOfCollection(list)
 
     list = createListOfFruits()
-    val filteredFruits = filterFruits(list)
+    val filteredFruits = filterAndMapFruits(list)
     printElementsOfCollection(filteredFruits)
+
+    list = createListOfFruits()
+    val anyResult = anyFruit(list)
+    val allResult = allFruits(list)
+    println("anyResult is $anyResult, allResult is $allResult")
 }
 
-fun filterFruits(collection: Collection<String>): Collection<String> {
+fun allFruits(collection: Collection<String>): Boolean {
+    val allResult = collection.all { it.length <= 5 }
+    return allResult
+}
+
+fun anyFruit(collection: Collection<String>): Boolean {
+    val anyResult = collection.any { it.length <= 5 }
+    return anyResult
+}
+
+fun filterAndMapFruits(collection: Collection<String>): Collection<String> {
     val newCollection = collection.filter { it.length <= 5 }
         .map { it.uppercase() }
     return newCollection
