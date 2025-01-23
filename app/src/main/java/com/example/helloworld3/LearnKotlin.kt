@@ -111,9 +111,9 @@ fun createCollection(): Set<String> {
 }
 
 fun doStudy(study: Study?) {
-    study?.let { stu ->
-        stu.read()
-        stu.doHomework()
+    study?.let {
+        it.read()
+        it.doHomework()
     }
 }
 
