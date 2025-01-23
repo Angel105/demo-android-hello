@@ -48,6 +48,16 @@ fun main() {
     }.start()
 
     println("Text Length is ${getTextLength(null)}")
+
+    var content: String? = "hello"
+    if (content != null) {
+        printUpperCase(content)
+    }
+}
+
+fun printUpperCase(content: String?) {
+    val upperCase = content!!.uppercase()
+    println(upperCase)
 }
 
 fun getTextLength(text: String?) = text?.length?: 0
