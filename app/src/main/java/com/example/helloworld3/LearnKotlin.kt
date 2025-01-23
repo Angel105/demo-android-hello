@@ -96,9 +96,9 @@ fun createCollection(): Set<String> {
     return set
 }
 
-fun doStudy(study: Study) {
-    study.read()
-    study.doHomework()
+fun doStudy(study: Study?) {
+    study?.read()
+    study?.doHomework()
 }
 
 fun methodName(param1: Int, param2: Int): Int {
