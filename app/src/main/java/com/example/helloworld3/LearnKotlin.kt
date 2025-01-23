@@ -43,9 +43,9 @@ fun main() {
     val allResult = allFruits(list)
     println("anyResult is $anyResult, allResult is $allResult")
 
-    Thread(Runnable {
+    Thread {
         println("Thread is running")
-    }).start()
+    }.start()
 }
 
 fun allFruits(collection: Collection<String>): Boolean {
