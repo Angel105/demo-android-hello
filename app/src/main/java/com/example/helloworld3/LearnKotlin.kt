@@ -46,6 +46,15 @@ fun main() {
     Thread {
         println("Thread is running")
     }.start()
+
+    println("Text Length is ${getTextLength(null)}")
+}
+
+fun getTextLength(text: String?): Int {
+    if (text != null) {
+        return text.length
+    }
+    return 0
 }
 
 fun allFruits(collection: Collection<String>): Boolean {
