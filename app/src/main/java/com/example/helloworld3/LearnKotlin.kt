@@ -50,12 +50,7 @@ fun main() {
     println("Text Length is ${getTextLength(null)}")
 }
 
-fun getTextLength(text: String?): Int {
-    if (text != null) {
-        return text.length
-    }
-    return 0
-}
+fun getTextLength(text: String?) = text?.length?: 0
 
 fun allFruits(collection: Collection<String>): Boolean {
     val allResult = collection.all { it.length <= 5 }
