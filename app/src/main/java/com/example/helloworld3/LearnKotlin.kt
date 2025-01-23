@@ -53,6 +53,12 @@ fun main() {
     if (content != null) {
         printUpperCase(content)
     }
+
+    printParams(123)
+}
+
+fun printParams(num: Int, str:String = "hello") {
+    println("num is $num, str is $str")
 }
 
 fun printUpperCase(content: String?) {
