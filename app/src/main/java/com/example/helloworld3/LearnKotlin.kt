@@ -77,6 +77,16 @@ fun main() {
         toString()
     }
     println(result)
+
+    list = createListOfFruits()
+    val obj = StringBuilder().apply {
+        append("Continue eating fruits again & again... \n")
+        for (fruit in list) {
+            append(fruit).append("\n")
+        }
+        append("All fruits have been eaten again!")
+    }
+    println(obj.toString())
 }
 
 fun printParams(num: Int = 100, str:String = "hello") {
