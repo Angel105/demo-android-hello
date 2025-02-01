@@ -57,12 +57,23 @@ fun main() {
     printParams(str = "Kotlin")
 
     list = createListOfFruits()
-    val result = with(StringBuilder()) {
+    var result = with(StringBuilder()) {
         append("Start eating fruits...\n")
         for (fruit in list) {
             append(fruit).append("\n")
         }
         append("Ate all fruits.")
+        toString()
+    }
+    println(result)
+
+    list = createListOfFruits()
+    result = StringBuilder().run {
+        append("Start eating fruits again ... \n")
+        for (fruit in list) {
+            append(fruit).append("\n")
+        }
+        append("Ate all fruits again!")
         toString()
     }
     println(result)
