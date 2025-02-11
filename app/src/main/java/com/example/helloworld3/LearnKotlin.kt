@@ -87,6 +87,9 @@ fun main() {
         append("All fruits have been eaten again!")
     }
     println(obj.toString())
+
+    val count = "ABC123xyz!@#".lettersCount()
+    println("Count = $count")
 }
 
 fun printParams(num: Int = 100, str:String = "hello") {
