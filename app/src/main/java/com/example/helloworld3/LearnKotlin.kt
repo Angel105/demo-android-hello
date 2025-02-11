@@ -101,6 +101,9 @@ fun main() {
     money3 = money1 + money2
     val money4 = money3 + 20
     println("Money4 value: ${money4.value}")
+
+    val str = "abc" * 3
+    println("Str : $str")
 }
 
 fun printParams(num: Int = 100, str:String = "hello") {
