@@ -11,3 +11,5 @@ fun String.lettersCount(): Int {
 }
 
 operator fun String.times(n: Int) = repeat(n)
+
+fun getRandomLengthString(str: String) = str * (1..20).random()

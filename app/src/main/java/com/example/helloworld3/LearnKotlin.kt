@@ -102,8 +102,13 @@ fun main() {
     val money4 = money3 + 20
     println("Money4 value: ${money4.value}")
 
-    val str = "abc" * 3
+    var str = "abc" * 3
     println("Str : $str")
+    str = "xyz"
+    str = getRandomLengthString(str)
+    println("New str : $str")
+
+
 }
 
 fun printParams(num: Int = 100, str:String = "hello") {
