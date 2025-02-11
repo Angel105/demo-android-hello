@@ -10,10 +10,4 @@ fun String.lettersCount(): Int {
     return count
 }
 
-operator fun String.times(n: Int): String {
-    val builder = StringBuilder()
-    repeat(n) {
-        builder.append(this)
-    }
-    return builder.toString()
-}
+operator fun String.times(n: Int) = repeat(n)
