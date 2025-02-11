@@ -90,6 +90,11 @@ fun main() {
 
     val count = "ABC123xyz!@#".lettersCount()
     println("Count = $count")
+
+    val money1 = Money(5)
+    val money2 = Money(10)
+    val money3 = money1 + money2
+    println("Money3 value: ${money3.value}")
 }
 
 fun printParams(num: Int = 100, str:String = "hello") {
