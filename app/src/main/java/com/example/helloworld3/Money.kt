@@ -6,4 +6,9 @@ class Money(val value: Int) {
         val sum = value + money.value
         return Money(sum)
     }
+
+    operator fun plus(newValue: Int): Money {
+        val sum = value + newValue
+        return Money(sum)
+    }
 }
