@@ -109,6 +109,12 @@ fun main() {
     println("New str : $str")
 
 
+    val num1 = 100
+    val num2 = 80
+    val result1 = num1AndNum2(num1, num2, ::plus)
+    val result2 = num1AndNum2(num1, num2, ::minus)
+    println("Higher-Order function result1: $result1")
+    println("Higher-Order function result2: $result2")
 }
 
 fun printParams(num: Int = 100, str:String = "hello") {
