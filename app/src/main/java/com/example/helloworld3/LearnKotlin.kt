@@ -115,6 +115,16 @@ fun main() {
     val result2 = num1AndNum2(num1, num2) { n1, n2 -> n1 - n2 }
     println("Higher-Order function result1: $result1")
     println("Higher-Order function result2: $result2")
+
+    list = createListOfFruits()
+    val res = StringBuilder().build {
+        append("Start eating fruits.\n")
+        for (fruit in list) {
+            append(fruit).append("\n")
+        }
+        append("Ate all fruits.")
+    }
+    println(res.toString())
 }
 
 fun printParams(num: Int = 100, str:String = "hello") {
