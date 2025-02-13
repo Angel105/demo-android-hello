@@ -111,8 +111,8 @@ fun main() {
 
     val num1 = 100
     val num2 = 80
-    val result1 = num1AndNum2(num1, num2, ::plus)
-    val result2 = num1AndNum2(num1, num2, ::minus)
+    val result1 = num1AndNum2(num1, num2) { n1, n2 -> n1 + n2 }
+    val result2 = num1AndNum2(num1, num2) { n1, n2 -> n1 - n2 }
     println("Higher-Order function result1: $result1")
     println("Higher-Order function result2: $result2")
 }
