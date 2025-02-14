@@ -125,6 +125,17 @@ fun main() {
         append("Ate all fruits.")
     }
     println(res.toString())
+
+    println("main start")
+    str = ""
+    printString(str) { s ->
+        println("lambda start")
+        if (s.isEmpty())
+            return@printString
+        println(s)
+        println("lambda end")
+    }
+    println("main end")
 }
 
 fun printParams(num: Int = 100, str:String = "hello") {

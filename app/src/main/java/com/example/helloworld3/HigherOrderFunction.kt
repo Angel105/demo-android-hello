@@ -9,3 +9,10 @@ fun StringBuilder.build(block: StringBuilder.() -> Unit): StringBuilder {
     block()
     return this
 }
+
+fun printString(str:String, block: (String) -> Unit) {
+    println("printString begin")
+    block(str)
+    println("printString end")
+}
+
