@@ -16,3 +16,9 @@ inline fun printString(str:String, block: (String) -> Unit) {
     println("printString end")
 }
 
+inline fun runRunnable(crossinline block: () -> Unit) {
+    val runnable = Runnable {
+        block()
+    }
+    runnable.run()
+}
