@@ -10,7 +10,7 @@ fun StringBuilder.build(block: StringBuilder.() -> Unit): StringBuilder {
     return this
 }
 
-fun printString(str:String, block: (String) -> Unit) {
+inline fun printString(str:String, block: (String) -> Unit) {
     println("printString begin")
     block(str)
     println("printString end")

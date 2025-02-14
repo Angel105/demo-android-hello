@@ -131,7 +131,7 @@ fun main() {
     printString(str) { s ->
         println("lambda start")
         if (s.isEmpty())
-            return@printString
+            return
         println(s)
         println("lambda end")
     }
